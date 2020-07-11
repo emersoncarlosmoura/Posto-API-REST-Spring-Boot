@@ -1,0 +1,296 @@
+{
+	"info": {
+		"_postman_id": "d8fd3c2d-2ba2-4e22-aafc-31d4fd7ce58a",
+		"name": "PostoCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/tabela/importar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"preco\":\"418.0\",\r\n    \"idUsuario\":\"1\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/tabela/importar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tabela",
+						"importar"
+					]
+				},
+				"description": "Este recurso importa o .csv para o banco de dados"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/usuarios/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"preco\":\"418.0\",\r\n    \"idUsuario\":\"1\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuarios/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"1"
+					]
+				},
+				"description": "busca o usuario passando o id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/usuarios",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Teste 2\",\r\n    \"senha\":\"987654\",\r\n    \"email\":\"teste2@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios"
+					]
+				},
+				"description": "Adiciona novo usuario passando o id no request"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/usuarios/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Teste 1 ttttt\",\r\n    \"senha\":\"987654\",\r\n    \"email\":\"teste2@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuarios/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"1"
+					]
+				},
+				"description": "Atualiza o usuário passando o id no request"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/usuarios/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Teste 1 ttttt\",\r\n    \"senha\":\"987654\",\r\n    \"email\":\"teste2@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuarios/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"1"
+					]
+				},
+				"description": "Deleta usuario passando o id no request"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/historicos/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"preco\":\"10.0\",\r\n    \"idUsuario\":\"1\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/historicos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"historicos",
+						"1"
+					]
+				},
+				"description": "busca Historico de Preco pelo id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/historicos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"preco\":\"12.0\",\r\n    \"idUsuario\":\"1\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/historicos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"historicos"
+					]
+				},
+				"description": "Inserir novo historico de preco\r\nDeve conter um idUsuario existente na base de dados"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/historicos/2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"preco\":\"14.0\",\r\n    \"idUsuario\":\"2\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/historicos/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"historicos",
+						"2"
+					]
+				},
+				"description": "Atualizar Historico de Preco passando o id no request"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/historicos/2",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"preco\":\"14.0\",\r\n    \"idUsuario\":\"2\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/historicos/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"historicos",
+						"2"
+					]
+				},
+				"description": "Deletar historico de preco passando o id no request"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
